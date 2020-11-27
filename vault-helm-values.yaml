@@ -1,0 +1,14 @@
+ui:
+  enabled: true
+  serviceType: "NodePort"
+
+server:
+  dev:
+    enabled: true
+  service:
+    enabled: true
+    type: NodePort
+    nodePort: 30000
+  image:
+    repository: "vault"
+    tag: "1.5.4"
